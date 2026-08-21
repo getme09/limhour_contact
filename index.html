@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conatct With Me</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet
+  " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css
+  " integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==
+  " crossorigin="anonymous
+  " referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Background Wallpaper Canvas -->
+  <canvas id="wallpaper-canvas"></canvas>
+  <!-- Webpage Content -->
+   <div class="content-title">
+    <img src="https://cdn.phototourl.com/free/2026-08-10-4b1eed71-348c-40bc-8dea-8fd6bc1cce78.jpg">
+    <p class="deverloper-hour">
+      Deverloper</p>
+    <h1>VONG LIM HOUR​</h1>
+    <p class="content-subtitle">Well Come To Website My Contact Me </p>
+  </div>
+   <div class="join-btn">
+    <a href="https://www.facebook.com/Hour09lim"
+    target="_blank"
+     class="btn-Facebook">
+      <i class="fa-brands fa-square-facebook"></i>
+      Facebook</a>
+    <a href="https://www.tiktok.com/@limhourxing90816800?is_from_webapp=1&sender_device=pc"
+    target="_blank"
+     class="btn-TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+      Tik Tok</a>
+    <a href="https://www.instagram.com/h.o.u.r__01/"
+    target="_blank"
+     class="btn-Instagram">
+      <i class="fa-brands fa-instagram"></i>
+      Instagram</a>
+    <a href="https://t.me/LimhourVong" 
+    target="_blank"
+    class="join-btn-title">
+      <i class="fa-brands fa-telegram"></i>
+      Telegram</a>
+    <a href="#" onclick="alert('Coming Soon...')"
+    target="_blank"
+     class="btn-download">
+     <i class="fa-solid fa-download"></i>
+     Download</a>
+  </div>
+
+     <div>
+          <button onclick="alert('sl Knea mdg tt ban ot ? 🥺')"  class="cation">សូមគោរពនឹងថ្លែងអំណគុណសម្រាបការគាំទ្រយើងខ្ញុំ</button>
+      </div>   
+  <script>
+    const canvas = document.getElementById('wallpaper-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let particlesArray = [];
+    const numberOfParticles = 80;
+
+    // Mouse position tracker for interactivity
+    const mouse = {
+      x: null,
+      y: null,
+      radius: 150
+    };
+
+    window.addEventListener('mousemove', (event) => {
+      mouse.x = event.x;
+      mouse.y = event.y;
+    });
+
+    window.addEventListener('mouseleave', () => {
+      mouse.x = null;
+      mouse.y = null;
+    });
+
+    // Handle viewport resize
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+      init();
+    });
+
+    // Particle Class
+    class Particle {
+      constructor(x, y, dx, dy, size, color) {
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.dy = dy;
+        this.size = size;
+        this.color = color;
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+      }
+
+      update() {
+        // Bounce off screen boundaries
+        if (this.x > canvas.width || this.x < 0) this.dx = -this.dx;
+        if (this.y > canvas.height || this.y < 0) this.dy = -this.dy;
+
+        // Move particle
+        this.x += this.dx;
+        this.y += this.dy;
+
+        this.draw();
+      }
+    }
+
+    // Initialize particle pool
+    function init() {
+      particlesArray = [];
+      for (let i = 0; i < numberOfParticles; i++) {
+        const size = Math.random() * 3 + 1;
+        const x = Math.random() * (canvas.width - size * 2) + size;
+        const y = Math.random() * (canvas.height - size * 2) + size;
+        const dx = (Math.random() - 0.5) * 1.5;
+        const dy = (Math.random() - 0.5) * 1.5;
+        const color = '#38bdf8';
+
+        particlesArray.push(new Particle(x, y, dx, dy, size, color));
+      }
+    }
+
+    // Connect close particles with translucent lines
+    function connect() {
+      let opacityValue = 1;
+      for (let a = 0; a < particlesArray.length; a++) {
+        for (let b = a; b < particlesArray.length; b++) {
+          const dx = particlesArray[a].x - particlesArray[b].x;
+          const dy = particlesArray[a].y - particlesArray[b].y;
+          const distance = Math.hypot(dx, dy);
+
+          if (distance < 120) {
+            opacityValue = 1 - (distance / 120);
+            ctx.strokeStyle = `rgba(56, 189, 248, ${opacityValue})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+            ctx.stroke();
+          }
+        }
+
+        // Connect to mouse cursor if within range
+        if (mouse.x !== null && mouse.y !== null) {
+          const dxMouse = particlesArray[a].x - mouse.x;
+          const dyMouse = particlesArray[a].y - mouse.y;
+          const distanceMouse = Math.hypot(dxMouse, dyMouse);
+
+          if (distanceMouse < mouse.radius) {
+            opacityValue = 1 - (distanceMouse / mouse.radius);
+            ctx.strokeStyle = `rgba(129, 140, 248, ${opacityValue})`;
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    // Main animation loop
+    function animate() {
+      requestAnimationFrame(animate);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+      }
+      connect();
+    }
+
+    // Run setup
+    resizeCanvas();
+    init();
+    animate();
+  </script>
+
+</body>
+</html>

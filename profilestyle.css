@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body {
+    /* position: absolute; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+.profiles-card body {
+    display: flex;
+    position: absolute;
+    background: radial-gradient(circle, #e80f0f 0% , #b0d608 50%, #5d2020 100%);
+}
+
+.profiles-card  {
+    background-color: rgb(7, 197, 239);
+    position:absolute;  
+    display: flex;
+    border-radius: 30px;
+    /* max-width: 50em; */
+    top: 3cm;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 9cm;
+    height: 8cm;
+    /* height: 10em; */
+    bottom: 30px 20px;
+    margin: -30px;
+    /* padding-bottom: 20px; */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 40px -1px rgb(2, 255, 255);
+    transition: all 0.07s ease-in-out;
+}
+img {
+    position: absolute;
+    display: flex;
+    /* margin-top: -30px; */
+    /* right: 300px; */
+    /* padding: 50px; */
+    margin: -10%;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    border: 2px solid rgb(249, 253, 253);
+    width: 5em;
+    height: 6em;
+    top: 15%;
+    bottom: 5%;
+    /* gap:calc(20px); */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 9px -1px rgb(4, 93, 98);
+    /* Smooth Animation*/
+    transition: all 0.06s ease-in-out;
+}
+img:hover {
+    cursor: pointer;
+    transform:translateY(-5px);
+}
+h2 {
+    position: absolute;
+    display: flex;
+    font-family: 'AKbalthom TNRB', Courier, monospace;
+    top: 5.50em;
+    font-size: 24px;
+    margin-left: 1%;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 4px  6px -2px rgba(0, 0, 0, 0.5);
+}
+ a {
+    /* position:relative; */
+    display: flex;
+    text-decoration: none;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 7px;
+    margin-top: 10em;
+
+    /* Smooth Animation BTN*/
+    
+ }
+  .profiles-card a :hover {
+    transform: translateY(-10%)
+ }
+ .profiles-card i {
+    /* display:flex; */
+    background-color: rgb(21, 70, 149);
+    width: 4em;
+    border-radius: 20px;
+    padding: 8px;
+    /* margin: 1em; */
+    color: aliceblue;
+     transition: all 0.05s cubic-bezier(0.65, -0.55, 0.225, 1.55);
+ }
+ p {
+    position: absolute;
+    top: 58%;
+    font-size: 13px;
+    /* display: flex; */
+ }
+ .tooltip {
+    position: absolute;
+    top: -45px;
+    opacity: 0;
+    /* visibility: hidden; */
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    pointer-events: none;
+ }
+ /* Tooltip Little Arrow */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+}
+/* Hover Animations */
+.icon:hover .tooltip {
+    display: flex;
+    opacity: 20px;
+    visibility: visible;
+    top: -50px;
+}
+.icon_facebook :hover{
+    display: flex;
+    background-color: rgb(11, 72, 202);
+    justify-content: center;
+}
+.icon_telegram :hover{
+    display: flex;
+    background-color: rgba(5, 125, 211, 0.856);
+    justify-content: center;
+}
+.icon_tiktok :hover{
+    display: flex;
+    background-color: rgba(18, 18, 19, 0.856);
+    justify-content: center;
+    /* opacity: 1; */
+}
+.icon_instagram :hover{
+    display: flex;
+    background: linear-gradient(135deg, #d608aa ,#e80f0f);
+    justify-content: center;
+}
+

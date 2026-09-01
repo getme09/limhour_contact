@@ -198,5 +198,41 @@ img {
 .icon_instagram i:hover {
    color: #d608aa;
 }
+.btn-container {
+    position: absolute;
+    /* display: flex; */
+    top: 10em;
+    text-decoration: none;
+    list-style: none;
+
+}
+.btn-join li {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.btn-container {
+    display: flex;
+    top: 100px;
+
+}
+.btn-container button {
+    margin: 5px;
+
+}
+.btn-container a {
+    display: contents;
+    padding: 0.10px 0.20px;
+    margin-top: 1%;
+    padding-top: 10px;
+    /* background-color: black; */
+
+}
+.icon_github i {
+    position: absolute;
+    display: flex;
+
+}
+
 
 

@@ -8,7 +8,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: auto;
     background-color: rgba(17, 26, 33, 0.87);
     
 }
@@ -198,7 +198,4 @@ img {
 .icon_instagram i:hover {
    color: #d608aa;
 }
-
-
-
 

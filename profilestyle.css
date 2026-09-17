@@ -4,11 +4,12 @@
     box-sizing: border-box ;
 }
 body {
-    position: relative;
+    /* position: absolute; */
     display:flex;
     justify-content: center;
     align-items: center;
     overflow: auto;
+    /* background: linear-gradient(135deg ,#3f57cf ,#4d8dbb); */
     background-color: rgba(17, 26, 33, 0.87);
     
 }
@@ -198,4 +199,40 @@ img {
 .icon_instagram i:hover {
    color: #d608aa;
 }
+.Popupbtn {
+    position: absolute;
+    display: flex;
+    height: 20%;
+    align-items: center;
+    top: 76%;
+    width: 60%;
+    left: -5px;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg ,#3f57cf ,#4d8dbb);
+    visibility:hidden;
+    opacity: calc(1.1);
+}
+.Popupbtn a  {
+    display: flex;
+    position: relative;
+    margin-top: 4px;
+    color: black;
+}
+.page {
+    display: flex;
+    background: linear-gradient(135deg ,#062ce9 ,#0686e1);
+    border-radius: 10px;
+}
+.persernal {
+    display: flex;
+    left: 10px;
+    background: linear-gradient(135deg ,#062ce9 ,#0686e1);
+    border-radius: 10px;
+}
+
+
+
+
 

@@ -4,27 +4,27 @@
     box-sizing: border-box ;
 }
 body {
-    /* position: absolute; */
+    /* position: absolute; */  
     display:flex;
     justify-content: center;
     align-items: center;
     overflow: auto;
-    /* background: linear-gradient(135deg ,#3f57cf ,#4d8dbb); */
+    /* background: radial-gradient(circle, #1c90a5 0% ,#105888f3 100%); */
     background-color: rgba(17, 26, 33, 0.87);
     
 }
 
 .profiles-card {
-    background:linear-gradient(135deg ,#0849d6 30% ,#0686e1 80%);
-    position:absolute;  
+    background:linear-gradient(135deg ,#19b4b4 30% ,#0686e1ef 80%);
+    position:absolute;
     display: flex;
     border-radius: 30px;
     /* max-width: 50em; */
-    top: 3cm;
+    top: 4cm;
     flex-wrap: wrap;
     align-items: center;
-    width: 9cm;
-    height: 8cm;
+    width: 11cm;
+    height: 10cm;
     /* color: #ffffff; */
     /* height: 10em; */
     bottom: 30px 20px;
@@ -32,8 +32,8 @@ body {
     /* padding-bottom: 20px; */
     justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 40px -1px rgba(7, 11, 244, 0.856);
-    transition: all 0.07s ease-in-out;
+    box-shadow: 0 1px 50px -1px rgb(7, 216, 244);
+    transition: all 0.05s ease-in-out;
 }
 img {
     position: absolute;
@@ -45,7 +45,7 @@ img {
     margin: -10%;
     flex-wrap: wrap;
     border-radius: 20px;
-    border: 2px solid rgb(249, 253, 253);
+    border: 2px solid rgb(8, 252, 219);
     width: 5em;
     height: 6em;
     top: 15%;
@@ -54,8 +54,8 @@ img {
     /* gap:calc(20px); */
     justify-content: center;
     align-items: center;
-    box-shadow: 0 6px 20px -1px rgb(5, 228, 240);
-    transition: all 0.05s ease-in-out;
+    box-shadow: 0 8px 11px -2px rgba(192, 199, 204, 0.5);
+    transition: all 0.06s ease-in-out;
 }
 .profiles-card img {
     display: flex;
@@ -63,26 +63,26 @@ img {
 }
 .profiles-card img:hover {
     cursor: pointer;
+    box-shadow: 0 6px 30px -1px rgba(0, 0, 0, 0.993);
     /* transform:translateY(-6px); */
     transform: scale(1.1);
 }
- h2 {
+h2 {
     position: absolute;
-    display: flex;
+    display: contents;
     font-family:'Times New Roman', Times, serif ,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    top: 4.50em;
+    top: 130px;
     font-size: 30px;
     background: radial-gradient(135deg ,#0849d6 30% ,#0686e1 100%);
     margin-left: 1%;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 4px  6px -2px rgba(19, 101, 159, 0.5);
-    /* box-shadow: 0 6px 20px -1px rgb(5, 228, 240); */
+    /* text-shadow: 0 4px  10px -1px rgba(9, 117, 194, 0.5) */
 }
 .profiles-card h2 {
+    position: absolute;
     display: flex;
-    /* box-shadow: 0 6px 20px -1px rgb(5, 228, 240); */
-    text-shadow: #0a2ce9;
+    text-shadow: 0 4px  5px -1px rgba(3, 31, 51, 0.5);
 }
  a {
     /* position:relative; */
@@ -91,31 +91,50 @@ img {
     /* justify-content: center; */
     align-items: center;
     padding: 7px;
-    margin-top: 10em;
-    
-
-    /* Smooth Animation BTN*/
+    margin-top: 12em;
     
  }
+ .Pharagrap  {
+    /* position: absolute; */
+    display: flex;
+    top: 225px;
+    width: 350px;
+    color: #ffffff;
+    /* border: solid #0849d6 2px; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 20%;
+ }
+    /* Smooth Animation BTN*/   
   .profiles-card a :hover {
-    transform: translateY(-15%)
+    transform: translateY(-15%);
+    border: rgb(9, 218, 233) 0.50px solid;
+    /* color: #2afff4; */
  }
  .profiles-card i {
     /* display:flex; */
-    background-color: rgb(216, 220, 232);
-    width: 4em;
-    border-radius: 10px 20px 5px;
+    /* background-color: rgba(3, 32, 32, 0.548); */
+    /* background: radial-gradient(135deg ,#77a1fd 30% ,#feffff 100%); */
+    width: 80px;
+    border: #05f7ff 0.50px solid;
+    backdrop-filter: calc(12px);
+    border-radius: 10px;
     padding: 10px;
     /* margin: 1em; */
-    box-shadow: 0 6px 8px -1px rgb(0, 152, 240);
+    box-shadow: 0 7px 8px -1px rgb(0, 152, 240);
     color: aliceblue;
-     transition: all 0.12s cubic-bezier(0.65, -0.55, 0.225, 1.55);
+    transition: all 0.20s cubic-bezier(0.65, -0.55, 0.225, 1.55);
  }
- p {
+ .profiles-card p {
+    display: flex;
     position: absolute;
-    top: 58%;
-    font-size: 13px;
+    bottom: 170px;
+    font-size: 17px;
+    /* text-shadow:  9px  0 6px -1px rgba(3, 31, 51, 0.5); */
+    /* background-color: #0686e1; */
+    /* border: #2afff4 2px solid; */
+    border-radius: 10px;
     /* display: flex; */
+    cursor:auto;
  }
  .tooltip {
     position: absolute;
@@ -153,26 +172,30 @@ img {
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    box-shadow: 0 5px 7px -1px rgb(1, 226, 246);
+    box-shadow: 0 1px 15px -1px #05f7ff;
+    /* border: #062ce9 solid; */
 }
 .icon_facebook i {
+    /* border: rgb(253, 255, 255) 1px solid; */
     /* position: absolute; */
-    color: #0a2ce9;
+    /* display: flex; */
+    color: #062bff;
     /* background-color: aliceblue; */
 }
 .icon_facebook i:hover {
+    /* display: flex; */
     /* position: absolute; */
-    color: #062ce9;
+    color: #0730fd;
     /* background-color: aliceblue; */
 }
 .icon_telegram :hover{
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    box-shadow: 0 5px 7px -1px rgb(1, 226, 246);
+    box-shadow: 0 1px 15px -1px #05f7ff;
 }
 .icon_telegram i {
-    color: rgb(6, 155, 248);
+    color: rgb(6, 220, 248);
 }
 .icon_telegram i :hover {
     color: rgb(6, 155, 248);
@@ -181,7 +204,7 @@ img {
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    box-shadow: 0 5px 7px -1px rgb(1, 226, 246);
+    box-shadow: 0 1px 15px -1px #05f7ff;
     /* opacity: 1; */
 }
 .icon_tiktok i{
@@ -191,7 +214,7 @@ img {
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    box-shadow: 0 5px 7px -1px rgb(1, 226, 246);
+    box-shadow: 0 1px 15px -1px #05f7ff;
 }
 .icon_instagram i {
    color: #d60857;
@@ -212,13 +235,15 @@ img {
     border-radius: 10px;
     background: linear-gradient(135deg ,#3f57cf ,#4d8dbb);
     visibility:hidden;
-    opacity: calc(1.1);
-}
+     opacity: calc(1.1);
+} 
 .Popupbtn a  {
-    display: flex;
+    /* display: contents; */
+    display: flex;  
     position: relative;
     margin-top: 4px;
     color: black;
+    /* visibility: hidden; */
 }
 .page {
     display: flex;
@@ -227,9 +252,30 @@ img {
 }
 .persernal {
     display: flex;
-    left: 10px;
+    left: 100px;
     background: linear-gradient(135deg ,#062ce9 ,#0686e1);
     border-radius: 10px;
+}
+.Pharagrap{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: #0686e1 2px;
+    font-size: 15px;
+    border: 1px #05f7ff;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px -1px #070707;
+    color: rgb(2, 2, 2);
+    background: linear-gradient(135deg ,#42a6e0 ,#06a3e1);
+}
+h1 {
+    position: absolute;
+    display: block;
+    /* border: #062bff 100px; */
+    margin: -1px;
+
 }
 
 

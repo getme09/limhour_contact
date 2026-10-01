@@ -13,6 +13,11 @@ body {
     background-color: rgba(17, 26, 33, 0.87);
     
 }
+.profiles-card body {
+    position: absolute;
+    background:linear-gradient(135deg ,#19b4b4 30% ,#0686e1ef 80%);
+    color: cyan;
+}
 
 .profiles-card {
     background:linear-gradient(135deg ,#19b4b4 30% ,#0686e1ef 80%);
@@ -32,6 +37,7 @@ body {
     /* padding-bottom: 20px; */
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     box-shadow: 0 1px 50px -1px rgb(7, 216, 244);
     transition: all 0.05s ease-in-out;
 }
@@ -57,15 +63,19 @@ img {
     box-shadow: 0 8px 11px -2px rgba(192, 199, 204, 0.5);
     transition: all 0.06s ease-in-out;
 }
+#profiles-card {
+    overflow-y: 200px;
+    padding-bottom: 1em;
+}
 .profiles-card img {
     display: flex;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .profiles-card img:hover {
     cursor: pointer;
     box-shadow: 0 6px 30px -1px rgba(0, 0, 0, 0.993);
     /* transform:translateY(-6px); */
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 h2 {
     position: absolute;
@@ -106,7 +116,8 @@ h2 {
  }
     /* Smooth Animation BTN*/   
   .profiles-card a :hover {
-    transform: translateY(-15%);
+    /* transform: translateY(-15%); */
+    transform: scale(1.2);
     border: rgb(9, 218, 233) 0.50px solid;
     /* color: #2afff4; */
  }
@@ -275,7 +286,6 @@ h1 {
     display: block;
     /* border: #062bff 100px; */
     margin: -1px;
-
 }
 
 

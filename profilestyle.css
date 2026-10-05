@@ -28,8 +28,8 @@ body {
     top: 4cm;
     flex-wrap: wrap;
     align-items: center;
-    width: 11cm;
-    height: 10cm;
+    width: 10cm;
+    height: 9cm;
     /* color: #ffffff; */
     /* height: 10em; */
     bottom: 30px 20px;
@@ -39,19 +39,20 @@ body {
     align-items: center;
     flex-wrap: wrap;
     box-shadow: 0 1px 50px -1px rgb(7, 216, 244);
-    transition: all 0.05s ease-in-out;
+    transition: all 0.20s ease-in-out;
 }
 img {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     /* margin-top: -30px; */
     /* right: 300px; */
     /* padding: 50px; */
     /* background-color: rgb(16, 16, 16); */
     margin: -10%;
+    animation-delay: 0.10S ;
     flex-wrap: wrap;
     border-radius: 20px;
-    border: 2px solid rgb(8, 252, 219);
+    /* border: 2px solid rgb(8, 252, 219); */
     width: 5em;
     height: 6em;
     top: 15%;
@@ -61,7 +62,7 @@ img {
     justify-content: center;
     align-items: center;
     box-shadow: 0 8px 11px -2px rgba(192, 199, 204, 0.5);
-    transition: all 0.06s ease-in-out;
+    /* transition: all 0.06s ease-in-out; */
 }
 #profiles-card {
     overflow-y: 200px;
@@ -69,11 +70,16 @@ img {
 }
 .profiles-card img {
     display: flex;
+    position: absolute;
     /* object-fit: cover; */
+    border: 2px solid rgb(8, 252, 219);
+    transition: all 0.40s ease-in-out;
+
 }
-.profiles-card img:hover {
+img:hover {
     cursor: pointer;
-    box-shadow: 0 6px 30px -1px rgba(0, 0, 0, 0.993);
+    box-shadow: 0px 10px 50px rgba(19, 221, 248, 0.993), 
+                0px 10px 50px rgba(19, 221, 248, 0.993);
     /* transform:translateY(-6px); */
     transform: scale(1.2);
 }
@@ -81,8 +87,8 @@ h2 {
     position: absolute;
     display: contents;
     font-family:'Times New Roman', Times, serif ,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    top: 130px;
-    font-size: 30px;
+    top: 115px;
+    font-size: 35px;
     background: radial-gradient(135deg ,#0849d6 30% ,#0686e1 100%);
     margin-left: 1%;
     justify-content: center;
@@ -97,12 +103,11 @@ h2 {
  a {
     /* position:relative; */
     display: flex;
-    text-decoration: none;
+    text-decoration: none;  
     /* justify-content: center; */
     align-items: center;
-    padding: 7px;
-    margin-top: 12em;
-    
+    padding: 5px;
+    margin-top: 14em;  
  }
  .Pharagrap  {
     /* position: absolute; */
@@ -117,10 +122,13 @@ h2 {
     /* Smooth Animation BTN*/   
   .profiles-card a :hover {
     /* transform: translateY(-15%); */
-    transform: scale(1.2);
+    transform:  scaleX(1.2);
     border: rgb(9, 218, 233) 0.50px solid;
     /* color: #2afff4; */
- }
+    transition: all 0.40s ease-in-out; /* Hover Out*/
+
+}
+
  .profiles-card i {
     /* display:flex; */
     /* background-color: rgba(3, 32, 32, 0.548); */
@@ -129,16 +137,19 @@ h2 {
     border: #05f7ff 0.50px solid;
     backdrop-filter: calc(12px);
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
+    /* background: transparent; */
     /* margin: 1em; */
     box-shadow: 0 7px 8px -1px rgb(0, 152, 240);
+    /* box-shadow: 0 0 10px rgba(0,240,255,0.2); */
     color: aliceblue;
-    transition: all 0.20s cubic-bezier(0.65, -0.55, 0.225, 1.55);
+    transition: all 0.35s ease-in-out; /* Hover In*/
+    /* transition: all 0.20s cubic-bezier(0.65, -0.55, 0.225, 1.55); */
  }
  .profiles-card p {
     display: flex;
     position: absolute;
-    bottom: 170px;
+    bottom: 155px;
     font-size: 17px;
     /* text-shadow:  9px  0 6px -1px rgba(3, 31, 51, 0.5); */
     /* background-color: #0686e1; */
@@ -181,29 +192,27 @@ h2 {
 }
 .icon_facebook :hover{
     display: flex;
+    transform: rotate(1.2);
     background-color: #ffffff;
     justify-content: center;
-    box-shadow: 0 1px 15px -1px #05f7ff;
-    /* border: #062ce9 solid; */
+    box-shadow: 0 0 25px #01f7ff,
+              0 0 50px #01fff2;
 }
+
 .icon_facebook i {
-    /* border: rgb(253, 255, 255) 1px solid; */
-    /* position: absolute; */
-    /* display: flex; */
+
     color: #062bff;
-    /* background-color: aliceblue; */
 }
 .icon_facebook i:hover {
-    /* display: flex; */
-    /* position: absolute; */
+    
     color: #0730fd;
-    /* background-color: aliceblue; */
 }
 .icon_telegram :hover{
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    box-shadow: 0 1px 15px -1px #05f7ff;
+    box-shadow: 0 0 25px #01f7ff,
+              0 0 50px #01fff2;
 }
 .icon_telegram i {
     color: rgb(6, 220, 248);
@@ -215,7 +224,8 @@ h2 {
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    box-shadow: 0 1px 15px -1px #05f7ff;
+    box-shadow: 0 0 25px #01f7ff,
+              0 0 50px #01fff2;
     /* opacity: 1; */
 }
 .icon_tiktok i{
@@ -225,7 +235,9 @@ h2 {
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    box-shadow: 0 1px 15px -1px #05f7ff;
+    box-shadow: 0 0 25px #01f7ff,
+                0 0 50px #01fff2,
+                0 0 60px #15dad0;
 }
 .icon_instagram i {
    color: #d60857;

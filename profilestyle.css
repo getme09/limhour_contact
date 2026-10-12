@@ -24,13 +24,13 @@
     background:linear-gradient(135deg ,#19b4b4 30% ,#0686e1ef 80%);
     position:absolute;
     display: flex;
-    border-radius: 30px;
+    border-radius: 25px;
     /* max-width: 50em; */
-    top: 4cm;
+    top: 3cm;
     flex-wrap: wrap;
     align-items: center;
     width: 10cm;
-    height: 9cm;
+    height: 10.30cm;
     /* color: #ffffff; */
     /* height: 10em; */
     bottom: 30px 20px;
@@ -88,7 +88,7 @@ h2 {
     position: absolute;
     display: contents;
     font-family:'Times New Roman', Times, serif ,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    top: 155px;
+    top: 130px;
     font-size: 35px;
     background: radial-gradient(135deg ,#0849d6 30% ,#0686e1 100%);
     margin-left: 1%;
@@ -104,13 +104,18 @@ h2 {
  a {
     position:relative;
     display: flex;
-    animation-delay: 0.1s;
+    /* animation-delay: 0.1s; */
     text-decoration: none;  
     /* justify-content: center; */
     align-items: center;
     padding: 4px;
-    margin-top: 15em;
+    margin-top: 13em;
+    /* transition: all 0.30s ease-in-out; */
     /* background: linear-gradient(215deg ,#0849d6 50% ,#06a3e1 100%);   */
+ }
+ .profiles-card a i {
+    /* display: flex; */
+    transition: all 0.20s ease-in-out;
  }
  .Pharagrap  {
     /* position: absolute; */
@@ -125,7 +130,7 @@ h2 {
     /* Smooth Animation BTN*/   
   .profiles-card a :hover {
     transform: translateY(-6%);
-    transition: all 0.20s ease-in-out; /* Hover Out*/
+    /* transition: all 0.20s ease-in-out; Hover Out */
     /* color: #ffffff; */
     /* border: #05f7ff 0.50px solid; */
 }
@@ -144,15 +149,15 @@ h2 {
     box-shadow: 0 5px 10px -1px rgb(17, 32, 36);
     /* box-shadow: 0 0 10px rgba(0,240,255,0.2); */
     color: aliceblue;
-    transition: all 0.20s ease-in-out; /* Hover In*/
+    /* transition: all 0.30s ease-in-out; */
     /* transition: all 0.20s cubic-bezier(0.65, -0.55, 0.225, 1.55); */
  }
  .profiles-card p {
     display: flex;
     position: absolute;
-    bottom: 155px;
-    font-size: 17px;
-    top: 195px;
+    bottom: 150px;
+    font-size: 18px;
+    top: 180px;
     /* text-shadow:  9px  0 6px -1px rgba(3, 31, 51, 0.5); */
     /* background-color: #0686e1; */
     /* border: #2afff4 2px solid; */
@@ -292,26 +297,28 @@ h2 {
     background: linear-gradient(135deg ,#062ce9 ,#0686e1);
     border-radius: 10px;
 }
-.Pharagrap{
-    position: absolute;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    border: #0686e1 2px;
-    font-size: 15px;
-    border: 1px #05f7ff;
-    padding: 5px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px -1px #070707;
-    color: rgb(2, 2, 2);
-    background: linear-gradient(135deg ,#42a6e0 ,#06a3e1);
-}
-h1 {
+.Pharagrap {
     position: absolute;
     display: block;
-    /* border: #062bff 100px; */
-    margin: -1px;
-}
+    /* text-align: center; */
+    /* align-items: center; */
+    width: 120px;
+    border: #0686e1 2px;
+    place-items: center;
+    font-size: 8px;
+    border: 5px #05f7ff;
+    padding: 6px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    /* margin-left: 200px; */
+    box-shadow: 0 2px 8px -1px #070707;
+    color: rgb(230, 225, 225);
+    background: linear-gradient(135deg ,#1791c9b9 50% ,#058fc5c5 100%);
+} 
+.Pharagrap h1 {
+    display: flex;
+    /* height: 30px; */
+} 
 .imgcover img {
     /* position:sticky; */
     display: flex;
@@ -331,8 +338,106 @@ h1 {
     transform: none;
 
 }
-
-
+.namefb  {
+    position: absolute;
+    display: block;
+    /* margin: 120px; */
+    width: 70px;
+    height: 26px;
+    padding: 4px;
+    padding-left: 2.55%;
+    margin-top: 40%;
+    box-shadow: 0 3px 10px -1px #010305;
+    left: 5.20%;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family:'AKbalthom Ream';
+    /* background-color: #158b8d; */
+    background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%);
+}
+.titlefb p{
+    display: flex;
+    /* left: 10px; */
+    font-size: 11px;
+    color: #000000;
+    /* background: #02f2fa; */
+    /* width: 10px; */
+    border-radius: 10px;
+}
+.nameTG  {
+    position: absolute;
+    display: block;
+    /* margin: 120px; */
+    width: 70px;
+    height: 26px;
+    padding: 4px;
+    padding-left: 3%;
+    margin-top: 40%;
+    box-shadow: 0 3px 10px -1px #010305;
+    left: 29%;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family:'AKbalthom Ream';
+    /* background-color: #158b8d; */
+    background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%);
+}
+.titleTG p{
+    display: flex;
+    /* left: 10px; */
+    font-size: 11px;
+    color: #000000;
+    /* background: #02f2fa; */
+    /* width: 10px; */
+    border-radius: 10px;
+}
+.nameTT  {
+    position: absolute;
+    display: block;
+    /* margin: 120px; */
+    width: 70px;
+    height: 26px;
+    padding: 4px;
+    padding-left: 4.40%;
+    margin-top: 40%;
+    box-shadow: 0 3px 10px -1px #010305;
+    left: 53%;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family:'AKbalthom Ream';
+    /* background-color: #158b8d; */
+    background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%);
+}
+.titleTT p{
+    display: flex;
+    /* left: 10px; */
+    font-size: 11px;
+    color: #000000;
+    /* background: #02f2fa; */
+    /* width: 10px; */
+    border-radius: 10px;
+}
+.nameIG {
+    position: absolute;
+    display: block;
+    /* margin: 120px; */
+    width: 70px;
+    height: 26px;
+    padding: 4px;
+    padding-left: 2.50%;
+    margin-top: 40%;
+    box-shadow: 0 3px 10px -1px #010305;
+    left: 76.30%;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family:'AKbalthom Ream';
+    /* background-color: #158b8d; */
+    background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%);
+}
+.titleIG p{
+    display: flex;
+    /* left: 10px; */
+    font-size: 11px;
+    color: #000000;
+    /* background: #02f2fa; */
+    /* width: 10px; */
+    border-radius: 10px;
+}
 
 
 

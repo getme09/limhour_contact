@@ -314,7 +314,23 @@ h2 {
     box-shadow: 0 2px 8px -1px #070707;
     color: rgb(230, 225, 225);
     background: linear-gradient(135deg ,#1791c9b9 50% ,#058fc5c5 100%);
+
+    /* Apply the up/down animation by default*/
+        animation: titlefbUpDown 2s ease-in-out infinite;
+        transition: background-color 0.5s;
 } 
+/* Keyframes for Up & Down Movement */
+        @keyframes titlefbUpDown {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px); /* Moves up by 10px */
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
 .Pharagrap h1 {
     display: flex;
     /* height: 30px; */
@@ -353,6 +369,10 @@ h2 {
     /* font-family:'Adobe Heiti Std R', Times, serif; */
     /* background-color: #158b8d; */
     background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%);
+
+    /* Apply the up/down animation by default
+            animation: namefbUpDown 2s ease-in-out infinite;
+            transition: background-color 0.3s; */
 }
 .titlefb h1{
     display: flex;
@@ -362,6 +382,10 @@ h2 {
     /* background: #02f2fa; */
     /* width: 10px; */
     border-radius: 10px;
+    
+    /* Apply the up/down animation by default*/
+    /* animation: titlefbUpDown 2s ease-in-out infinite;
+        transition: background-color 0.3s; */
 }
 .nameTG  {
     position: absolute;
@@ -369,7 +393,7 @@ h2 {
     /* margin: 120px; */
     width: 70px;
     height: 26px;
-    padding: 6.20px;
+    padding: 7px;
     padding-left: 3.20%;
     margin-top: 36%;
     box-shadow: 0 3px 10px -1px #010305;
@@ -394,7 +418,7 @@ h2 {
     /* margin: 120px; */
     width: 70px;
     height: 26px;
-    padding: 7px;
+    padding: 7.30px;
     padding-left: 4.25%;
     margin-top: 36%;
     box-shadow: 0 3px 10px -1px #010305;

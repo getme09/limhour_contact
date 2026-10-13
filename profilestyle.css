@@ -11,21 +11,18 @@
     align-items: center;
     /* overflow: auto; */
     /* background: radial-gradient(215deg, #1c90a5 50% ,#105888f3 100%); */
-    background-color: rgba(17, 26, 33, 0.87);
+    /* background-color: rgba(17, 26, 33, 0.87); */
+    min-height: 100vh;
+    background: url('https://i.postimg.cc/XN2Rq8Yq/japan-background-digital-art.jpg') center/cover no-repeat;
     
 }
-.profiles-card body {
-    position: absolute;
-    /* background:linear-gradient(135deg ,#19b4b4 30% ,#0686e1ef 80%); */
-    color: cyan;
-}
-
 .profiles-card {
-    background:linear-gradient(135deg ,#19b4b4 30% ,#0686e1ef 80%);
+    background:linear-gradient(135deg ,#123f588a 30% ,#03394994 80%);
     position:absolute;
     display: flex;
     border-radius: 25px;
     /* max-width: 50em; */
+    backdrop-filter: blur(5px);
     top: 3cm;
     flex-wrap: wrap;
     align-items: center;
@@ -63,7 +60,12 @@ img {
     justify-content: center;
     align-items: center;
     box-shadow: 0 10px 15px 5px rgba(57, 64, 68, 0.5);
+    /* backdrop-filter: blur(10px); */
     /* transition: all 0.06s ease-in-out; */
+
+        /* Apply the up/down animation by default*/
+        /* animation: titlefbUpDown 2s ease-in-out infinite;
+        transition: background-color 0.5s; */
 }
 #profiles-card {
     overflow-y: 200px;
@@ -73,14 +75,15 @@ img {
     display: flex;
     position: absolute;
     /* object-fit: cover; */
-    border: 2px solid rgb(8, 252, 219);
+    border: 2px solid rgba(147, 212, 241, 0.295);
     transition: all 0.40s ease-in-out;
+    backdrop-filter: blur(10px);
 
 }
 img:hover {
     cursor: pointer;
-    box-shadow: 0px 10px 50px rgba(11, 61, 68, 0.993), 
-                0px 10px 50px rgba(19, 221, 248, 0.993);
+    box-shadow: 0px 10px 50px rgba(7, 23, 26, 0.993), 
+                0px 10px 50px rgba(5, 46, 51, 0.993);
     /* transform:translateY(-6px); */
     transform: scale(1.2);
 }
@@ -99,7 +102,7 @@ h2 {
 .profiles-card h2 {
     position: absolute;
     display: flex;
-    text-shadow: 0 4px  5px -1px rgba(3, 31, 51, 0.5);
+    text-shadow: 0 4px  7px  rgba(2, 13, 20, 0.5);
 }
  a {
     position:relative;
@@ -137,11 +140,11 @@ h2 {
 
  .profiles-card i {
     /* display:flex; */
-    background: linear-gradient(215deg ,#1894db 40% ,#08f0e4 100%);
+    background: linear-gradient(215deg ,#18354677 40% ,#3257776e 100%);
     /* background: radial-gradient(135deg ,#77a1fd 30% ,#feffff 100%); */
     width: 81px;
     /* border: #05f7ff 0.50px solid; */
-    backdrop-filter: calc(12px);
+    backdrop-filter: blur(8px);
     border-radius: 10px;
     padding: 12px;
     /* background: transparent; */
@@ -313,19 +316,21 @@ h2 {
     /* margin-left: 200px; */
     box-shadow: 0 2px 8px -1px #070707;
     color: rgb(230, 225, 225);
-    background: linear-gradient(135deg ,#1791c9b9 50% ,#058fc5c5 100%);
+    /* background: linear-gradient(135deg ,#1791c9b9 50% ,#058fc5c5 100%); */
+    background:linear-gradient(135deg ,#123f585e 30% ,#03394963 80%);
+    text-shadow: 0 4px 8px  rgba(0, 0, 0, 0.808);
 
     /* Apply the up/down animation by default*/
         animation: titlefbUpDown 2s ease-in-out infinite;
-        transition: background-color 0.5s;
+        transition: backdround-color 0.05s;
 } 
 /* Keyframes for Up & Down Movement */
         @keyframes titlefbUpDown {
             0% {
                 transform: translateY(0);
             }
-            50% {
-                transform: translateY(-10px); /* Moves up by 10px */
+            60%  {
+                transform: translateY(10PX); /* Moves up by 10px */
             }
             100% {
                 transform: translateY(0);
@@ -368,17 +373,18 @@ h2 {
     /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     /* font-family:'Adobe Heiti Std R', Times, serif; */
     /* background-color: #158b8d; */
-    background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%);
-
+    /* background: linear-gradient(135deg ,#2f3b3db9 50% ,#0f2122c5 100%); */
+    background:linear-gradient(135deg ,#123f588a 30% ,#03394994 80%);
     /* Apply the up/down animation by default
             animation: namefbUpDown 2s ease-in-out infinite;
             transition: background-color 0.3s; */
 }
 .titlefb h1{
     display: flex;
+    text-shadow: 0 6px 7px rgba(0, 0, 0, 0.808);
     /* left: 10px; */
     font-size: 11px;
-    color: #000000;
+    color: #f8f1f1;
     /* background: #02f2fa; */
     /* width: 10px; */
     border-radius: 10px;
@@ -401,13 +407,15 @@ h2 {
     /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     /* font-family:'Adobe Heiti Std R', Times, serif; */
     /* background-color: #158b8d; */
-    background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%);
+    /* background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%); */
+    background:linear-gradient(135deg ,#123f588a 30% ,#03394994 80%);
 }
 .titleTG h1{
     display: flex;
+    text-shadow: 0 6px 7px rgba(0, 0, 0, 0.808);
     /* left: 10px; */
     font-size: 11px;
-    color: #000000;
+    color: #f8f1f1;;
     /* background: #02f2fa; */
     /* width: 10px; */
     border-radius: 10px;
@@ -419,20 +427,22 @@ h2 {
     width: 70px;
     height: 26px;
     padding: 7.30px;
-    padding-left: 4.25%;
+    padding-left: 4.35%;
     margin-top: 36%;
     box-shadow: 0 3px 10px -1px #010305;
-    left: 52.30%;
+    left: 52.36%;
     /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     /* font-family:'Adobe Heiti Std R', Times, serif; */
     /* background-color: #158b8d; */
-    background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%);
+    /* background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%); */
+    background:linear-gradient(135deg ,#123f588a 30% ,#03394994 80%);
 }
 .titleTT h1{
     display: flex;
     /* left: 10px; */
+    text-shadow: 0 6px 7px rgba(0, 0, 0, 0.808);
     font-size: 11px;
-    color: #000000;
+    color: #f8f1f1;
     /* background: #02f2fa; */
     /* width: 10px; */
     border-radius: 10px;
@@ -451,13 +461,15 @@ h2 {
     /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     /* font-family:'Adobe Heiti Std R', Times, serif; */
     /* background-color: #158b8d; */
-    background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%);
+    /* background: linear-gradient(135deg ,#0dadd4b9 50% ,#05b8c5c5 100%); */
+    background:linear-gradient(135deg ,#123f588a 30% ,#03394994 80%);
 }
 .titleIG h1{
     display: flex;
     /* left: 10px; */
+    text-shadow: 0 6px 7px rgba(0, 0, 0, 0.808);
     font-size: 11px;
-    color: #000000;
+    color: #f8f1f1;
     /* background: #02f2fa; */
     /* width: 10px; */
     border-radius: 10px;

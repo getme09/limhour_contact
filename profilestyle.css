@@ -21,8 +21,9 @@
     position:absolute;
     display: flex;
     border-radius: 25px;
+    border: 1px solid #58727e;
     /* max-width: 50em; */
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     top: 3cm;
     flex-wrap: wrap;
     align-items: center;
@@ -36,7 +37,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    box-shadow: 0 1px 50px -1px rgb(7, 216, 244);
+    box-shadow: 0 1px 50px -1px rgb(67, 89, 92);
     transition: all 0.20s ease-in-out;
 }
 img {
